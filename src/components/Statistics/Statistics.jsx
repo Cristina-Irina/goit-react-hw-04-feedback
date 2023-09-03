@@ -33,7 +33,7 @@ export const Statistics = ({
       </StatItem>
       <StatItem>
         <StatDescription>
-          Positive feeadback: <span>{positivePercentage}%</span>
+          Positive feedback: <span>{positivePercentage}%</span>
         </StatDescription>
       </StatItem>
     </StatList>
@@ -46,6 +46,6 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.number,
 };
